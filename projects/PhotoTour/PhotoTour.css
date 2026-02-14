@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(bg.jpg);
+    background-repeat: repeat;
+    background-color: rgb(32, 32, 132); 
+    color: white;
+}
+
+header h1 {
+    color: black;
+}
+
+nav a {
+    color:black;
+    text-decoration: none;
+}
+
+.current {
+    color: blue;
+    font-weight: bold;
+}
+
+.decorative {
+    min-height: 135px;
+    background: url("airplane.jpg") no-repeat top right;
+}
