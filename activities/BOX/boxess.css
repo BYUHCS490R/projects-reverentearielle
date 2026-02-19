@@ -1,0 +1,25 @@
+body { 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color:  cadetblue;
+}
+
+main { background-color: burlywood;}
+
+.mainpicture {
+    background-color: blue;
+    width: 150px;
+    margin: 50px 80px;
+}
+
+.mainpicture img {
+    width: 150px;
+}
+
+footer { background-color:  rgb(197, 197, 221);
+    border: 10px solid black; 
+    /*border-width: 10px;
+    border-color: black;
+    border-style: dotted;}*/
