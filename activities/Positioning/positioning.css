@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wave {
+    width: 100px;
+    border: thin solid black;
+    float: left;
+}
+
+.floatleft {
+    float: left;
+}
+
+.place {
+    position: relative;
+    top:  -50px;
+}
+
+.relative {
+    position:  relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+.wave img {
+    width: 100%;
+}
+
+.clear {
+    clear: both;
+}
