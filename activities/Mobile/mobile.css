@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: rgb(243, 170, 218);
+}
+
+header h1 {
+    margin: 0;
+    background-color: rgb(171, 73, 73);
+}
+
+nav {
+    background-color: rgb(145, 145, 231);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    background-color: rgb(145, 145, 231);
+}
+
+.row{
+    display:  flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.card {
+    border:  thin solid black;
+    width: 200px;
+    box-shadow: 5px 5px 3px rgba(50,50,50,0.7);
+    border-radius: 5px;
+}
+
+
+
+.card h2 {
+    display: block;
+    width:70%;
+    padding: 3px 5px;
+    background-color: rgb(1, 1, 6);
+    color: white;
+    margin: 5px;
+    border-radius: 5px;
+
+}
+
+.card a {
+    display: block;
+    width: 70%;
+    padding: 3px 5px;
+    background-color: blue;
+    color: white;
+    margin: 5px;
+    text-decoration: none;
+
+}
+.cardfig {
+    margin: 0;
+    font-size: 10px;
+}
+
+.cardfig img{
+    width: 100%;
+}
+
+@media ONLY print{
+    body {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    nav {display: none;}
+}
