@@ -47,8 +47,8 @@ nav a:hover{
     display: block;
     width:70%;
     padding: 3px 5px;
-    background-color: rgb(1, 1, 6);
-    color: white;
+    background-color: rgb(255, 109, 160);
+    color: rgb(0, 0, 0);
     margin: 5px;
     border-radius: 5px;
 
@@ -58,8 +58,8 @@ nav a:hover{
     display: block;
     width: 70%;
     padding: 3px 5px;
-    background-color: rgb(196, 143, 187);
-    color: white;
+    background-color: rgb(255, 109, 160);
+    color: rgb(0, 0, 0);
     margin: 5px;
     text-decoration: none;
 
@@ -73,10 +73,44 @@ nav a:hover{
     width: 100%;
 }
 
-@media ONLY print{
-    body {
-        font-family: 'Courier New', Courier, monospace;
-    }
-    nav {display: none;}
+.sidebar {
+    width: 200px;
 }
 
+@media ONLY screen AND (max-width: 600px) {
+    body {
+        margin-top:  250px;
+    }
+    nav { flex-direction: column;
+
+    }
+
+    nav a {
+        border-bottom: thin solid white;
+    }
+
+    .main-row {
+        flex-direction: column-reverse;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .row {
+        flex-basis: column nowrap;
+        align-items: center;
+    }
+
+    .card {
+        width: 95%;
+    }
+
+    .main-card {
+        order: -1;
+    }
+}
+
+media print{
+
+}
