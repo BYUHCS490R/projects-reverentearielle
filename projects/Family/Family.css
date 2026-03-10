@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: rgb(255, 164, 164);
+    padding: 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(205, 125, 157);
+    padding: 10px 0;
+}
+
+nav a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: rgb(145, 145, 231);
+}
+
+
+main {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+
+aside {
+    width: 25%;
+}
+
+aside img {
+    width: 100%;
+    display: block;
+}
+
+
+.row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+
+.card {
+    border: thin solid black;
+    width: 220px;
+    box-shadow: 5px 5px 6px rgba(0,0,0,0.4);
+    border-radius: 5px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.cardfig {
+    margin: 0;
+    font-size: 12px;
+}
+
+.cardfig img {
+    width: 100%;
+    display: block;
+    height: 160px;
+    object-fit: cover;
+}
+
+.card h2 {
+    background-color: rgb(255, 164, 164);
+    padding: 8px;
+    border-radius: 5px;
+    margin: 8px 0;
+}
+
+.card a {
+    display: block;
+    padding: 6px;
+    background-color: rgb(255, 164, 164);
+    color: black;
+    text-decoration: none;
+    margin-top: 6px;
+    border-radius: 5px;
+}
+
+
+
+main > h3,
+main > ol {
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+footer {
+    padding: 12px;
+    text-align: center;
+    background-color: rgb(255, 164, 164);
+}
+
+
+@media only screen and (max-width: 700px) {
+
+    
+    nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav a {
+        border-bottom: thin solid white;
+        text-align: center;
+    }
+
+    
+    main {
+        flex-direction: column;
+    }
+
+    
+    aside {
+        width: 100%;
+        order: 2;
+    }
+
+    .row {
+        order: 1;
+    }
+
+    
+    .card {
+        width: 100%;
+    }
+}
+
+
+
+@media print {
+
+    nav {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+
+    body {
+        background: white;
+        color: black;
+    }
+
+    .card {
+        box-shadow: none;
+    }
+}
