@@ -1,0 +1,28 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: aliceblue;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    justify-content: space-around;
+    display: flex;
+    background-color: antiquewhite;
+    padding: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: blueviolet;
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+nav a:hover {
+    background-color: rgb(6, 172, 172);
+}
