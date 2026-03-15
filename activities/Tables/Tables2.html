@@ -4,21 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tables</title>
-    <link rel="stylesheet" href="Tables.css">
+    <link rel="stylesheet" href="Tables2.css">
 </head>
 <body>
     <header>
         <h1>Table</h1>
     </header>
-    <nav>
-        <a href="#">Link</a>
-        <a href="#">Link</a>
-        <a href="#">Link</a>
-    </nav>
     <main>
         <h2>Class Schedule</h2>
-        <table border="1">
-            <caption>Winter Sem!</caption>
+        <p class="intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit cum iste repellendus, consectetur molestias necessitatibus esse dolorem, sed et non facere. Necessitatibus, at veritatis consequatur expedita mollitia delectus ipsum dolore?</p>
+        <table class="schedule">
+            <caption>Class !</caption>
             <thead>
                 <tr>
                     <th>Course Number</th>
@@ -73,15 +69,14 @@
                 </tr>
             </tfoot>
         </table>
-        <p><strong>When do you use a table?</strong></p>
-        <p>A lot of data is being presented in a structured way.</p>
-        <p><strong>When do you not use a table?</strong></p>
-        <p>When the data is not related or when you have a small amount of data.</p>
-        <p><strong>When do you need to do extra work for table accessibility?</strong></p>
-        <p>When you have complex data or when your table is not simple.</p>
+        <p><strong>Why don't we use the border attribute?</strong></p>
+        <p>because it is outdated in HTML. Instead, we use CSS to control the border so the design and structure of the page stay separate.</p>
+        <p><strong>What is the easiest way to color every other row a different color?</strong></p>
+        <p>to use the CSS selector <code>:nth-child(even)</code> or <code>:nth-child(odd)</code> to style every other row with a different background color.</p>
+        
     </main>
     <footer>
-        <p>&copy; 2026 Table</p>
+        <p>&copy; 2026 Arielle Blessy Reverente</p>
     </footer>
 </body>
 </html>

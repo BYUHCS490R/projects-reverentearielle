@@ -1,0 +1,33 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.schedule {
+    order: 1px solid black;
+    caption-side:  bottom;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin: 0;
+}
+
+.schedule thead, .schedule tfoot {
+    background-color: rgb(41, 41, 117);
+    color: white;
+}
+
+.schedule td {
+    border-bottom:  1px solid rgb(200, 200, 200);
+    vertical-align: center;
+}
+
+.schedule tbody tr:nth-of-type(odd) {
+    background-color: rgb(225, 225, 225);
+}
+
+
+.intro:first-letter {
+    font-size: larger;
+    color: red;
+    font-weight: bold;
+}
+
