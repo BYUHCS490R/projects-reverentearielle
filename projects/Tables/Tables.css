@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: rgb(255, 240, 246);
+}
+
+header {
+    background-color: rgb(255, 154, 198);
+    padding: 18px;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(255, 214, 236);
+    padding: 10px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(106, 44, 112);
+    padding: 8px 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: rgb(106, 44, 112);
+    color: white;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+main {
+    flex: 1;
+}
+
+aside {
+    width: 25%;
+    background-color: rgb(255, 230, 242);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+aside img {
+    width: 100%;
+    display: block;
+}
+
+.albums {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.albums caption {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: rgb(106, 44, 112);
+}
+
+.albums thead {
+    background-color: rgb(200, 162, 255);
+    color: white;
+}
+
+.albums th,
+.albums td {
+    padding: 12px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+.albums tbody tr:nth-of-type(odd) {
+    background-color: rgb(255, 230, 242);
+}
+
+.albums tbody tr:nth-of-type(even) {
+    background-color: rgb(242, 230, 255);
+}
+
+footer {
+    padding: 14px;
+    text-align: center;
+    background-color: rgb(255, 154, 198);
+    color: white;
+}
+
+@media (max-width: 700px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+        order: 2;
+    }
+
+}
+
+@media print {
+
+    nav {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+
+}
