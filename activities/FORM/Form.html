@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="Form.css">
+</head>
+<body>
+    <header>
+        <h1>Arielle's Web Design</h1>
+    </header>
+    <main> 
+        <form action="formprocs.html" method="post">
+            <div>
+                <label for="fname">Name</label>
+                <input type="text" name="Fullname"id="fname" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" placeholder="name@gmail.com">
+           </div>
+           <div>
+                <label for="password">Password</label>
+                <input type="password" name="pass" id="password">
+            <div>
+                <label for="state">State:</label>
+                <select name=" state" id="state">
+                    <option value="blank">---- </option>
+                    <option value="CA">California</option>
+                    <option value="HI">HAwaii</option>
+                    <option value="UT">Utah</option>
+                </select>
+            </div>
+            <div>
+                <label for="comments">Comments</label>
+                <textarea name="comments" id="comments">Pre=filled in</textarea>
+            </div>
+            <div>
+                Gender:
+                <label><input type="radio" name="gender" value="male">Male</label>
+                <label><input type="radio" name="gender" value="female">Female</label>
+            </div>
+            <div>
+                <label><input type="checkbox" name="Remember" value="male">Remember Me?</label>
+            </div>
+            <div>
+                <input type="submit" value="Sign up">
+           </div>
+        </form>
+
+        <h3>Engagement</h3>
+            <ol type="1">
+                <li>The form tag has an "action" attribute. What does it do?
+                    <ul>The action attribute tells the form where to send the data after the user submits it.</ul>
+                </li>
+                <li>The form tag has a "method" attribute. What does it do?
+                    <ul>The method attribute tells the form how to send the data, usually by GET or POST.</ul>
+                 </li>
+                 <li>What is the difference between a "POST" and a "GET"?
+                     <ul>GET puts the form data in the URL, while POST sends the data inside the request body. POST is better for private or larger form data, and GET is better for simple searches or links.</ul>
+                    </li>
+            </ol>
+    </main>
+    <footer>
+        &copy; Arielle 2026
+    </footer>
+</body>
+</html>
