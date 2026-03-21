@@ -12,6 +12,8 @@
     </header>
     <main> 
         <form action="formprocs.html" method="post">
+            <fieldset>
+            <legend>Sign Up</legend>
             <div>
                 <label for="fname">Name</label>
                 <input type="text" name="Fullname"id="fname" required>
@@ -47,20 +49,19 @@
             <div>
                 <input type="submit" value="Sign up">
            </div>
+        </fieldset>
         </form>
-
+        
         <h3>Engagement</h3>
-            <ol type="1">
-                <li>The form tag has an "action" attribute. What does it do?
-                    <ul>The action attribute tells the form where to send the data after the user submits it.</ul>
-                </li>
-                <li>The form tag has a "method" attribute. What does it do?
-                    <ul>The method attribute tells the form how to send the data, usually by GET or POST.</ul>
-                 </li>
-                 <li>What is the difference between a "POST" and a "GET"?
-                     <ul>GET puts the form data in the URL, while POST sends the data inside the request body. POST is better for private or larger form data, and GET is better for simple searches or links.</ul>
-                    </li>
-            </ol>
+        <ol>
+            <li>Why don't we use the border attribute?
+                <ul>We do not use the border attribute because it is outdated in HTML. Instead, we use CSS to control the border so the design and structure stay separate.</ul>
+            </li>
+            
+            <li>What is the easiest way to color every other row a different color
+                <ul>The easiest way is to use the CSS selector <code>:nth-child(even)</code> or <code>:nth-child(odd)</code> to style every other row with a different background color.</ul>
+            </li>
+        </ol>
     </main>
     <footer>
         &copy; Arielle 2026
