@@ -7,64 +7,150 @@
     <link rel="stylesheet" href="Form.css">
 </head>
 <body>
-    <header>
-        <h1>Arielle's Web Design</h1>
-    </header>
-    <main> 
-        <form action="formprocs.html" method="post">
-            <fieldset>
-            <legend>Sign Up.</legend>
-            <div>
+
+<header>
+    <h1>Web Design </h1>
+</header>
+
+<main>
+
+    <form action="formprocs.html" method="get" id="myForm">
+
+        <fieldset>
+            <legend>Sign Up</legend>
+
+            <div class="form-row">
                 <label for="fname">Name</label>
-                <input type="text" name="Fullname"id="fname" required>
+                <input type="text" id="fname" name="name" required>
             </div>
-            <div>
-                <label for="email">Email.</label>
-                <input type="text" name="email" id="email" placeholder="name@gmail.com">
-           </div>
-           <div>
+
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div class="form-row">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+
+            <div class="form-row">
+                <label for="birth">Birthdate</label>
+                <input type="date" id="birth" name="birth">
+            </div>
+
+            <div class="form-row">
+                <label for="Age">Age</label>
+                <input type="Age" id="Age" name="Age">
+            </div>
+
+            <div class="form-row">
                 <label for="password">Password</label>
-                <input type="password" name="pass" id="password">
-            <div>
-                <label for="state">State:</label>
-                <select name=" state" id="state">
-                    <option value="blank">---- </option>
-                    <option value="CA">California</option>
-                    <option value="HI">HAwaii</option>
-                    <option value="UT">Utah</option>
+                <input type="password" id="password" name="password">
+            </div>
+
+            <div class="form-row">
+                <label for="state">State</label>
+                <select id="state" name="state">
+                    <option value="">----</option>
+                    <option>California</option>
+                    <doption>Hawaii</option>
+                    <option>Utah</option>
                 </select>
             </div>
-            <div>
+
+            <iv class="form-row">
                 <label for="comments">Comments</label>
-                <textarea name="comments" id="comments">Pre=filled in</textarea>
+                <textarea id="comments" name="comments"></textarea>
             </div>
-            <div>
-                Gender:
-                <label><input type="radio" name="gender" value="male">Male</label>
-                <label><input type="radio" name="gender" value="female">Female</label>
-            </div>
-            <div>
-                <label><input type="checkbox" name="Remember" value="male">Remember Me?</label>
-            </div>
-            <div>
-                <input type="submit" value="Sign up">
-           </div>
-        </fieldset>
-        </form>
-        
-        <h3>Engagement</h3>
-        <ol>
-            <li>Why don't we use the border attribute?
-                <ul>We do not use the border attribute because it is outdated in HTML. Instead, we use CSS to control the border so the design and structure stay separate.</ul>
-            </li>
+
             
-            <li>What is the easiest way to color every other row a different color
-                <ul>The easiest way is to use the CSS selector <code>:nth-child(even)</code> or <code>:nth-child(odd)</code> to style every other row with a different background color.</ul>
-            </li>
-        </ol>
-    </main>
-    <footer>
-        &copy; Arielle 2026
-    </footer>
+            <div class="check-row">
+                <div class="spacer">Gender:</div>
+                <label><input type="radio" name="gender"> Male</label>
+                <label><input type="radio" name="gender"> Female</label>
+            </div>
+
+            
+            <div class="check-row">
+                <div class="spacer"></div>
+                <label><input type="checkbox">Remember Me</label>
+            </div>
+
+
+            <div class="check-row">
+                <div class="spacer"></div>
+                <input type="submit" value="Sign Up">
+            </div>
+
+        </fieldset>
+
+    </form>
+
+    <h3>Engagement</h3>
+        <ol>
+            <li>What is JavaScript? How did it get its name?
+                <ul>
+                 <li>JavaScript is a programming language used to make web pages interactive. It was named JavaScript to sound similar to Java, even though they are different languages.</li>
+                </ul>
+                </li>
+
+                <li>What are the two ways you can run JavaScript?
+                    <ul>
+                    <li>You can run JavaScript inside a web browser or on a server using environments like Node.js.</li>
+                    </ul>
+                </li>
+
+                <li>What was the most popular front-end js library?
+                    <ul>
+                    <li>jQuery was the most popular front-end JavaScript library in the past.</li>
+                    </ul>
+                </li>
+
+                <li>What is the most popular front-end js library today?
+                    <ul>
+                    <li>React is the most popular front-end JavaScript library today.</li>
+                    </ul>
+                </li>
+            </ol>
+</main>
+
+<footer>
+    <p>&copy; 2026 Arielle</p>
+</footer>
+
+<script>
+    document.getElementById('myForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+        //alert("Form Submitted");
+
+        const fullname = document.getElementById('fname').value;
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        const age = document.getElementById('Age').value;
+
+
+        if (!fname || !email) {
+            alert("You need a name and email.");
+            return;
+        }
+
+        if (!age || age <18) {
+        alert("You need to be 18");
+        return;
+        }
+
+        const formData = {
+            name: fname,
+            email: email,
+            password: password,
+            age: age
+        };
+
+        console.log("Form Data:", formData);
+    });
+    
+</script>
+
 </body>
 </html>

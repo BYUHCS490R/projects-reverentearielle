@@ -3,10 +3,17 @@ body {
     margin: 0;
 }
 
-
 header {
     background-color: pink;
     padding: 10px;
+    font-size: 20px;
+}
+
+
+footer {
+    background-color: lightgray;
+    padding: 10px;
+    text-align: center;
 }
 
 
@@ -18,28 +25,35 @@ form {
 
 fieldset {
     border: 2px solid black;
-    padding: 15px;
+    padding: 10px;
+    background-color: lightpink;
 }
 
 
 legend {
-    background-color: fuchsia;
+    background-color: gray;
     color: white;
     padding: 5px 10px;
 }
 
 
-form div {
+.form-row,
+.check-row {
     display: flex;
-    align-items: center;
     gap: 10px;
     margin: 10px 0;
+    align-items: center;
 }
 
 
-label {
-    width: 120px;
+.form-row label {
+    width: 150px;
     text-align: right;
+}
+
+
+.spacer {
+    width: 150px;
 }
 
 
@@ -47,10 +61,10 @@ input:not([type="submit"]),
 select,
 textarea {
     padding: 5px;
-    font-size: 14px;
     border-radius: 5px;
     width: 200px;
 }
+
 
 textarea {
     height: 80px;
@@ -58,7 +72,6 @@ textarea {
 
 
 input[type="submit"] {
-    margin-left: 120px;
     padding: 8px 15px;
     background-color: lightblue;
     border: none;
@@ -81,17 +94,21 @@ input[type="checkbox"] {
 
 @media only screen and (max-width: 600px) {
 
-    form div {
+    .form-row,
+    .check-row {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    label {
+    .form-row label {
         text-align: left;
     }
 
+    .spacer {
+        width: auto;
+    }
+
     input[type="submit"] {
-        margin-left: 0;
         width: 100%;
     }
 }
