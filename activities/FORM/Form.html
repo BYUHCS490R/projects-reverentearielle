@@ -89,27 +89,15 @@
 
     <h3>Engagement</h3>
         <ol>
-            <li>What is JavaScript? How did it get its name?
+            <li>What is AJAX??
                 <ul>
                  <li>JavaScript is a programming language used to make web pages interactive. It was named JavaScript to sound similar to Java, even though they are different languages.</li>
                 </ul>
                 </li>
 
-                <li>What are the two ways you can run JavaScript?
+                <li>Why do you put your JS Code in a separate file?
                     <ul>
                     <li>You can run JavaScript inside a web browser or on a server using environments like Node.js.</li>
-                    </ul>
-                </li>
-
-                <li>What was the most popular front-end js library?
-                    <ul>
-                    <li>jQuery was the most popular front-end JavaScript library in the past.</li>
-                    </ul>
-                </li>
-
-                <li>What is the most popular front-end js library today?
-                    <ul>
-                    <li>React is the most popular front-end JavaScript library today.</li>
                     </ul>
                 </li>
             </ol>
@@ -119,38 +107,7 @@
     <p>&copy; 2026 Arielle</p>
 </footer>
 
-<script>
-    document.getElementById('myForm').addEventListener('submit', function (event) {
-        event.preventDefault();
-        //alert("Form Submitted");
-
-        const fullname = document.getElementById('fname').value;
-        const email = document.getElementById('email').value;
-        const password = document.getElementById('password').value;
-        const age = document.getElementById('Age').value;
-
-
-        if (!fname || !email) {
-            alert("You need a name and email.");
-            return;
-        }
-
-        if (!age || age <18) {
-        alert("You need to be 18");
-        return;
-        }
-
-        const formData = {
-            name: fname,
-            email: email,
-            password: password,
-            age: age
-        };
-
-        console.log("Form Data:", formData);
-    });
-    
-</script>
+<script src="Form.js"></script>
 
 </body>
 </html>
