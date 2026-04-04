@@ -1,31 +1,58 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
+header {
+    background-color: pink;
+    padding: 10px;
+}
 
+main {
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+/* button link */
 .btn {
     display: block;
     width: 150px;
     padding: 10px;
-    
-    background-color: #d91560;
+    background-color: #34343E;
     color: white;
-
     text-align: center;
     text-decoration: none;
-
-    border-radius: 5px; /* makes it look like a button */
-    
+    border-radius: 5px;
     transition: background-color 1s ease-in-out;
-
 }
 
 .btn:hover {
     background-color: lightblue;
+    color: black;
 }
 
-
+/* transform */
 #byuhcampus {
-    transform: rotate(10deg);
+    width: 250px;
     margin: 30px;
+    transform: rotate(10deg);
+}
+
+#byuhcampus img {
+    width: 100%;
+    display: block;
+}
+
+audio,
+video,
+iframe {
+    display: block;
+    margin: 20px 0;
+}
+
+h3 {
+    margin-top: 30px;
 }
