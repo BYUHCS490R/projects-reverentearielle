@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+header {
+    background: pink;
+    padding: 10;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: gray;
+    padding: 10;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+
+}
+
+main {
+    padding:20 ;
+}
+
+footer {
+    background-color: ;
+    padding: 10;
+    text-align: center;
+}
